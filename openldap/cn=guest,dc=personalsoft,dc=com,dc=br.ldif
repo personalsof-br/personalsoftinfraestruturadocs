@@ -1,0 +1,5 @@
+dn: cn=guest,dc=personalsoft,dc=com,dc=br
+cn: guest
+objectClass: simpleSecurityObject
+objectClass: organizationalRole
+userPassword: {SSHA}n+aYhO/TOitWkyMp9v/fe5ndtOhY0/3U

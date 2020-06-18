@@ -1,0 +1,68 @@
+dn: uid=antony.guibert,ou=people,dc=personalsoft,dc=com,dc=br
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Antony
+sn: Guibert
+mail: antony.guibert@personalsoft.com.br
+telephoneNumber: +55 19 988707786
+telephoneNumber: +55 19 991827893
+uid: antony.guibert
+
+dn: uid=fabiano.bonin,ou=people,dc=personalsoft,dc=com,dc=br
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Fabiano
+sn: Bonin
+mail: fabiano.bonin@personalsoft.com.br
+telephoneNumber: +55 19 988707183
+uid: fabiano.bonin
+
+dn: uid=luiz.tempesta,ou=people,dc=personalsoft,dc=com,dc=br
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Luiz
+sn: Tempesta
+mail: luiz.tempesta@personalsoft.com.br
+telephoneNumber: +55 19 988707787
+telephoneNumber: +55 19 999541300
+uid: luiz.tempesta
+
+dn: uid=israel.moreira,ou=people,dc=personalsoft,dc=com,dc=br
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Israel
+sn: Moreira
+telephoneNumber: +55 19 995044785
+mail: israel.moreira@personalsoft.com.br
+uid: israel.moreira
+
+dn: uid=diego.scaramal,ou=people,dc=personalsoft,dc=com,dc=br
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Diego
+sn: Scaramal
+telephoneNumber: +55 19 996976442
+mail: diego.scaramal@personalsoft.com.br
+uid: diego.scaramal
+
+dn: uid=jhaimilson.biscassi,ou=people,dc=personalsoft,dc=com,dc=br
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Jhaimilson
+sn: Biscassi
+telephoneNumber: +55 19 998312021
+telephoneNumber: +55 19 974168270
+mail: jhaimilson.biscassi@personalsoft.com.br
+uid: jhaimilson.biscassi

@@ -1,0 +1,224 @@
+﻿dn: dc=personalsoft,dc=com,dc=br
+objectClass: top
+objectClass: dcObject
+objectClass: organization
+o: personalsoft
+dc: personalsoft
+
+dn: cn=admin,dc=personalsoft,dc=com,dc=br
+objectClass: simpleSecurityObject
+objectClass: organizationalRole
+cn: admin
+description: LDAP administrator
+userPassword: {SSHA}HVPJyjVEaQxBn/5gaSSM7pCSkAdBYr7j
+
+dn: ou=people,dc=personalsoft,dc=com,dc=br
+ou: people
+objectClass: organizationalUnit
+objectClass: top
+
+dn: uid=antony.guibert,ou=people,dc=personalsoft,dc=com,dc=br
+userPassword: {SSHA}/7DRBlMnk3y2yt3AABT5VYLNxMjo8656THtCzg==
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: posixAccount
+cn: Antony
+sn: Guibert
+mail: antony.guibert@personalsoft.com.br
+telephoneNumber: +55 19 988707786
+telephoneNumber: +55 19 991827893
+uid: antony.guibert
+uidNumber: 2000
+gidNumber: 2000
+homeDirectory: /dev/null
+loginShell: /bin/bash
+
+dn: uid=fabiano.bonin,ou=people,dc=personalsoft,dc=com,dc=br
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: posixAccount
+cn: Fabiano
+sn: Bonin
+mail: fabiano.bonin@personalsoft.com.br
+telephoneNumber: +55 19 988707183
+uid: fabiano.bonin
+uidNumber: 2000
+gidNumber: 2000
+loginShell: /bin/bash
+homeDirectory: /dev/null
+userPassword: {SSHA}nnDs7ObTV0/kowFt8Pg6aJJNf41KM2hFUmdmOE1xYWc=
+
+dn: uid=luiz.tempesta,ou=people,dc=personalsoft,dc=com,dc=br
+userPassword: {SSHA}KVLBAbasn82OVKip1hzbI6xNb3YJU3DzFL/BHw==
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: posixAccount
+cn: Luiz
+sn: Tempesta
+mail: luiz.tempesta@personalsoft.com.br
+telephoneNumber: +55 19 988707787
+telephoneNumber: +55 19 999541300
+uid: luiz.tempesta
+uidNumber: 2000
+gidNumber: 2000
+homeDirectory: /dev/null
+loginShell: /bin/bash
+
+dn: uid=israel.moreira,ou=people,dc=personalsoft,dc=com,dc=br
+userPassword: {SSHA}vI2upvOX2fMwkLz0ml+E/4WpyH6lBzjps0GnQg==
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: posixAccount
+cn: Israel
+sn: Moreira
+telephoneNumber: +55 19 995044785
+mail: israel.moreira@personalsoft.com.br
+uid: israel.moreira
+uidNumber: 2000
+gidNumber: 2000
+homeDirectory: /dev/null
+loginShell: /bin/bash
+
+dn: uid=diego.scaramal,ou=people,dc=personalsoft,dc=com,dc=br
+userPassword: {SSHA}Lvm2UQqb/L6/blAWgVlRh1TiNbNAaVKvnZgi6w==
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: posixAccount
+cn: Diego
+sn: Scaramal
+telephoneNumber: +55 19 996976442
+mail: diego.scaramal@personalsoft.com.br
+uid: diego.scaramal
+uidNumber: 2000
+gidNumber: 2000
+homeDirectory: /dev/null
+loginShell: /bin/bash
+
+dn: uid=jhaimilson.biscassi,ou=people,dc=personalsoft,dc=com,dc=br
+userPassword: {SSHA}ez/TgEWoVXwX4ndYj6G9WwV65eHRjtSrmkUamw==
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: posixAccount
+cn: Jhaimilson
+sn: Biscassi
+telephoneNumber: +55 19 998312021
+telephoneNumber: +55 19 974168270
+mail: jhaimilson.biscassi@personalsoft.com.br
+uid: jhaimilson.biscassi
+uidNumber: 2000
+gidNumber: 2000
+homeDirectory: /dev/null
+loginShell: /bin/bash
+
+dn: ou=services,dc=personalsoft,dc=com,dc=br
+ou: services
+objectClass: organizationalUnit
+objectClass: top
+
+dn: ou=custom,ou=services,dc=personalsoft,dc=com,dc=br
+ou: custom
+objectClass: organizationalUnit
+objectClass: top
+
+dn: cn=admin,ou=custom,ou=services,dc=personalsoft,dc=com,dc=br
+objectClass: organizationalRole
+objectClass: top
+roleOccupant: uid=luiz.tempesta,ou=people,dc=personalsoft,dc=com,dc=br
+roleOccupant: uid=jhaimilson.biscassi,ou=people,dc=personalsoft,dc=com,dc=br
+roleOccupant: uid=antony.guibert,ou=people,dc=personalsoft,dc=com,dc=br
+roleOccupant: uid=israel.moreira,ou=people,dc=personalsoft,dc=com,dc=br
+roleOccupant: uid=diego.scaramal,ou=people,dc=personalsoft,dc=com,dc=br
+roleOccupant: uid=fabiano.bonin,ou=people,dc=personalsoft,dc=com,dc=br
+cn: admin
+description:: UGVybWlzc8OjbyBwYXJhIGFjZXNzYXIgYXBsaWNhw6fDtWVzIGN1c3RvbWl6YWRhcy
+ Bjb21vIGFkbWluaXN0cmFkb3I=
+
+dn: ou=move,ou=services,dc=personalsoft,dc=com,dc=br
+ou: move
+objectClass: organizationalUnit
+objectClass: top
+
+dn: cn=admin,ou=move,ou=services,dc=personalsoft,dc=com,dc=br
+objectClass: organizationalRole
+objectClass: top
+roleOccupant: uid=israel.moreira,ou=people,dc=personalsoft,dc=com,dc=br
+roleOccupant: uid=diego.scaramal,ou=people,dc=personalsoft,dc=com,dc=br
+roleOccupant: uid=fabiano.bonin,ou=people,dc=personalsoft,dc=com,dc=br
+cn: admin
+description:: UGVybWlzc8OjbyBwYXJhIGFjZXNzYXIgbyBNb3ZlIGNvbW8gYWRtaW5pc3RyYWRvcg
+ ==
+
+dn: cn=guest,dc=personalsoft,dc=com,dc=br
+cn: guest
+objectClass: simpleSecurityObject
+objectClass: organizationalRole
+userPassword: {SSHA}oSMQ9hjHmFBqbblnXfu8yXDK67lSTDRaMUdZWkNhTFc=
+
+dn: ou=groups,dc=personalsoft,dc=com,dc=br
+objectClass: top
+objectClass: organizationalUnit
+ou: groups
+
+dn: ou=posix,ou=groups,dc=personalsoft,dc=com,dc=br
+objectClass: top
+objectClass: organizationalUnit
+ou: posix
+
+dn: cn=ps_sudo,ou=posix,ou=groups,dc=personalsoft,dc=com,dc=br
+cn: ps_sudo
+gidNumber: 3000
+objectClass: posixGroup
+memberUid: fabiano.bonin
+description: Acesso ao sudo
+
+dn: cn=ps_erp,ou=posix,ou=groups,dc=personalsoft,dc=com,dc=br
+objectClass: posixGroup
+cn: ps_erp
+gidNumber: 3001
+memberUid: luiz.tempesta
+description: Acesso aos servidores ERP dos clientes
+
+dn: cn=ps_web,ou=posix,ou=groups,dc=personalsoft,dc=com,dc=br
+cn: ps_web
+gidNumber: 3002
+objectClass: posixGroup
+description: Acesso aos servidores WEB dos clientes
+memberUid: luiz.tempesta
+
+dn: cn=ps_all,ou=posix,ou=groups,dc=personalsoft,dc=com,dc=br
+cn: ps_all
+gidNumber: 3003
+description: Acesso a todos os servidores
+objectClass: posixGroup
+memberUid: fabiano.bonin
+
+dn: ou=hosts,dc=personalsoft,dc=com,dc=br
+objectClass: top
+objectClass: organizationalUnit
+ou: hosts
+
+dn: ou=customers,ou=hosts,dc=personalsoft,dc=com,dc=br
+objectClass: top
+objectClass: organizationalUnit
+ou: customers
+
+dn: cn=trevilub-wms,ou=customers,ou=hosts,dc=personalsoft,dc=com,dc=br
+objectClass: top
+objectClass: device
+objectClass: ipHost
+cn: trevilub-wms
+ipHostNumber: 10.0.233.230
+o: Trevilub
+
