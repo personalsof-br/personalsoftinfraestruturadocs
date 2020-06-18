@@ -1,1 +1,1 @@
-<apache-archiva>
+[apache-archiva]
