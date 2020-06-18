@@ -1,6 +1,0 @@
-﻿dn: cn=search,dc=personalsoft,dc=com,dc=br
-cn: search
-objectClass: simpleSecurityObject
-objectClass: organizationalRole
-userPassword: {SSHA}Og+tdDreTfSmGuLRbZbq2Pq7Gx5CaURULnV0SHRqejc=
-
