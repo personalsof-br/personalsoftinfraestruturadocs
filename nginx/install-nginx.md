@@ -3,39 +3,63 @@
 VAADIN + PUSH + NGINX
 https://vaadin.com/forum#!/thread/11538752
 
+```
 sudo -i
 
 apt-get update
 apt-get install nginx -y
+```
 
 # Backup da configuração padrão
+
+```
 cd /etc/nginx
 cp sites-available sites-available.original -R
+```
 
 # Certificado auto-assinado
+
+```
 cd /etc/nginx
 openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/nginx/cert.key -out /etc/nginx/cert.crt
 chmod 600 cert.*
+```
 
 # Certificado existente (private key criptografada)
+
+```
 cd /etc/nginx
 wget ... -o ca.crt
 wget ... -o cert.crt
 wget ... -o cert.key
+```
+
 # Descriptografa a private key
+
+```
 openssl rsa -in cert.key -out cert.key
 chmod 600 ca.*
 chmod 600 cert.*
+```
 
 # Certificado obtido por CSR
+
+```
 cd /etc/nginx
 openssl genrsa -out cert.key 2048
 openssl req -new -sha256 -key cert.key -out cert.csr
+```
+
 # Enviar o CSR para um certificate provider
+
+```
 wget ... -o cert.crt
 chmod 600 cert.*
+```
 
 # Reverse proxy (alterar o donínio de acordo com o certificado)
+
+```
 cat > /etc/nginx/sites-available/default << 'EOL'
 #server {
 #  listen 80;
@@ -82,3 +106,4 @@ server {
   client_max_body_size 150m;
 }
 EOL
+```
